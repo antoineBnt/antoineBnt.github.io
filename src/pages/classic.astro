@@ -1,0 +1,47 @@
+---
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Level from "../components/Level.astro";
+import Footer from "../components/Footer.astro";
+import Pitch from "../components/Pitch.astro";
+import Border from "../components/Border.astro";
+import Burger from "../components/Burger.astro";
+---
+
+<!-- PAGE -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Découvrez le portfolio d'Antoine Brunet, étudiant en Bachelor Multimédia et Internet, spécialisé en design graphique, branding et développement web. Explorez ses créations et projets, mêlant créativité et expertise technique."
+    />
+  </head>
+  <body id="body">
+    <section class="classic classic-svg" id="classic">
+      <!-- -----------------------MENU BURGER---------------------- -->
+      <section id="picto">
+        <Burger />
+        <Header />
+      </section>
+
+      <Pitch />
+      <About />
+      <Border />
+      <Skills />
+      <Level />
+      <Footer />
+    </section>
+  </body>
+  <!-- <script src="/script.js" type="module" is:inline></script> -->
+  <script>
+    import "../scripts/script.js";
+    // import "../scripts/svg.js";
+  </script>
+</html>
